@@ -18,7 +18,7 @@ class FirebaseAuthController extends Controller
         $email = $request->input('email');
         $password = $request->input('password');
 
-        $response = $this->auth->signInWithEmailAndPassoword($email, $password);
+        $response = $this->auth->signInWithEmailAndPassword($email, $password);
         return $response;
     }
 }
