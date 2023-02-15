@@ -125,7 +125,7 @@ class FirebaseController extends Controller
         ->equalTo($key);
         $data = $blog->getValue();
 
-        return view('products/single_product')->with($data);
+        return view('products/single_product')->with('data', $data);
     }
 
     //services
